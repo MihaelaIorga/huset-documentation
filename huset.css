@@ -1,0 +1,102 @@
+        header,
+        nav,
+        aside,
+        footer,
+        article {
+            border: 0px;
+            padding: .5em;
+        }
+body {
+    width: 70%;
+    margin: auto;
+
+}
+
+        @media (min-width: 600px) {
+            main {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "lg nav" "feat feat" "res res" "crs crs" "con con" "proc proc" "foot foot";
+                grid-gap: 5px;
+            }
+            header {
+                grid-area: lg;
+            }
+            nav {
+                grid-area: nav;
+                text-align: right;
+            }
+            section {
+                grid-area: crs;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: .5em;
+            }
+
+            .process {
+                grid-area: proc;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: .5em;
+            }
+
+
+
+            aside {
+                grid-area: feat;
+            }
+            footer {
+                grid-area: foot;
+                padding: 100px;
+                margin: auto;
+            }
+        }
+
+#business-case {
+    margin:auto;
+}
+
+.about {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.description {
+    position: absolute;
+   bottom: 5%;
+
+}
+
+.research {
+    grid-area: res;
+    padding: 50px;
+    text-align: center;
+}
+
+.conclusion {
+    grid-area: con;
+    padding: 50px;
+    text-align: center;
+}
+
+article h2 {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.half {
+    max-width: 100%;
+}
+
+.card {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.case {
+    padding-left: 30px;
+    padding-right: 30px;
+}
