@@ -9,7 +9,8 @@
 body {
     width: 70%;
     margin: auto;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Questrial', sans-serif;
+    color: #333745;
 
 }
 
@@ -73,18 +74,23 @@ body {
     grid-area: res;
     padding: 50px;
     text-align: center;
+    color: #5c5c5c;
+    font-size: 60px;
 }
 
 .conclusion {
     grid-area: con;
     padding: 50px;
     text-align: center;
+    color: #5c5c5c;
+    font-size: 60px;
 }
 
 article h2 {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
+    color: #78DBE2;
 }
 
 .half {
@@ -100,4 +106,10 @@ article h2 {
 .case {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+footer a {
+    color: #F06449;
+    font-weight: bolder;
+    text-decoration: none;
 }
